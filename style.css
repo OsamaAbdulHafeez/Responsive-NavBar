@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cross i{
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    color: #ff0000;
+}
+.cross{
+    display: none;
+}
+.crossShow i{
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    color: #ff0000;
+}
+.crossShow{
+    display: block;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 10px 5px 10px 5px #434343;
+}
+.main .logo{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #434343;
+}
+.main .logo span{
+    color: #429ade;
+}
+.main .menu ul{
+    display: flex;
+}
+.main .menu ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+.main .socialMedia i{
+    color: #429ade;
+    font-size: 1rem;
+    margin-left: 1.2rem;
+}
+.burger{
+    display: none;
+    font-size: 2rem;
+    width: fit-content;
+    padding-right: 30px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.main .MenuAndIcons{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+}
+.burger2{
+    display: block;
+}
+.main .menuIcons{
+    display: none;
+}
+
+
+
+
+.content{
+    display: block;
+    background-color: #c1d8e9;
+    padding: 2rem;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+}
+.content .logo{
+    font-size: 1rem;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    color: #434343;
+    margin-bottom: 2rem;
+}
+.content .logo span{
+    color: #429ade;
+}
+
+.content .menu{
+    height: 50vh;
+}
+.content .menu ul{
+    display: block;
+    line-height: 3;
+}
+.content .menu ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+.content .socialMedia i{
+    color: #429ade;
+    font-size: 1.4rem;
+    margin-left: 1.2rem;
+}
+
+@media only screen and (max-width:580px){
+    .content{
+        padding-left: 0.5rem;
+    }
+    .content .socialMedia i{
+        margin-left: 0.8rem;
+    }
+    .content .menu ul{
+        display: block;
+        line-height: 2.5;
+    }
+    .content .menu{
+        height: 40vh;
+    }
+    .content .logo{
+        letter-spacing: 2px;
+        
+    }
+    /* .crossShow i{
+        top: 0;
+    } */
+}
+@media only screen and (max-width:480px){
+    .content{
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        width: 55vw;
+    }
+    .content .socialMedia i{
+        margin-left: 0.5rem;
+    }
+    .content .menu ul{
+        display: block;
+        line-height: 2;
+    }
+    .content .logo{
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+    }
+    .content .menu{
+        height: 30vh;
+    }
+    .crossShow i{
+        top: 0;
+    }
+}
